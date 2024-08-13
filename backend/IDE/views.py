@@ -6,5 +6,5 @@ from . import mongoDB
 
 # Create your views here.
 
-def index():
-    JsonResponse({"index": "index JSON response"}, status=201)
+def index(request):
+    return JsonResponse({"index": "index JSON response"}, status=201)
