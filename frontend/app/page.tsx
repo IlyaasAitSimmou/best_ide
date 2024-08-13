@@ -3,93 +3,49 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+<div className="main">
+                <div className="header">
+                    <span>My Project - index.html</span>
+                    <span>Connected to: Localhost</span>
+                </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+                <div className="editor">
+                    <div className="file-explorer">
+                        <h3>Files</h3>
+                        <ul>
+                            <li>index.html</li>
+                            <li>styles.css</li>
+                            <li>script.js</li>
+                        </ul>
+                    </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+                    <div className="code-area">
+                        <div className="line-numbers">
+                            1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10
+                        </div>
+                        <div className="code-content">
+                            &lt;!DOCTYPE html&gt;<br />
+                            &lt;html lang="en"&gt;<br />
+                            &lt;head&gt;<br />
+                            &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br />
+                            &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br />
+                            &nbsp;&nbsp;&lt;title&gt;My IDE&lt;/title&gt;<br />
+                            &lt;/head&gt;<br />
+                            &lt;body&gt;<br />
+                            &nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;<br />
+                            &lt;/body&gt;<br />
+                            &lt;/html&gt;
+                        </div>
+                    </div>
+                </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
-}
+                <div className="status-bar">
+                    <span>Spaces: 4</span>
+                    <span>UTF-8</span>
+                    <span>LF</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+    );
+};

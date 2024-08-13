@@ -16,7 +16,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="ide-container">
+              <div className="sidebar">
+                  <img src="https://img.icons8.com/ios-glyphs/30/ffffff/home.png" alt="Home" className="sidebar-icon" />
+                  <img src="https://img.icons8.com/ios-glyphs/30/ffffff/search.png" alt="Search" className="sidebar-icon" />
+                  <img src="https://img.icons8.com/ios-glyphs/30/ffffff/folder-invoices.png" alt="Files" className="sidebar-icon" />
+                  <img src="https://img.icons8.com/ios-glyphs/30/ffffff/settings.png" alt="Settings" className="sidebar-icon" />
+              </div>
+            {children}
+        </div>
+      </body>
     </html>
   );
 }
