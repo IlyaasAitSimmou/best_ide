@@ -28,4 +28,4 @@ def addAccount(email, username, password):
     return account
 
 
-def sendVerificationEmail(email):
+# def sendVerificationEmail(email):
