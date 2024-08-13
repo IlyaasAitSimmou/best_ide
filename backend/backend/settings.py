@@ -13,16 +13,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os 
 
-# At the end of file. add these lines
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-MEDIA_URLS ='/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# Also Make aure To set allowed_hosts to '*'
-
-ALLOWED_HOSTS = ['*']
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -36,7 +26,7 @@ SECRET_KEY = 'django-insecure-w$h@p2%oi4@-&_h1dk0pa^wz&pn3x_5e06jinhc#d1nmqz!zhn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -133,3 +123,22 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# At the end of file. add these lines
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+MEDIA_URLS ='/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# ,
+#     {
+#         "src": "staticfiles_build.sh",
+#         "use": "@vercel/static-build",
+#         "config": { "distDir": "staticfiles_build" }
+#     }
+
+# {
+#             "src": "/static/(.*)",
+#             "dest": "/static/$1"
+#         },
